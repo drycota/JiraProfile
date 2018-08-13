@@ -9,7 +9,7 @@ public class ProfilePageObject {
     String userDetailsButton = "//*[@id='header-details-user-fullname']";
     String viewProfile = "//*[@id='view_profile']";
     public void openProfileWindow() {
-        $(By.xpath(userDetailsButton)).waitUntil(Condition.visible, 3000).click();
-        $(By.xpath(viewProfile)).waitUntil(Condition.visible, 3000).click();
+        $(By.xpath(userDetailsButton)).waitUntil(Condition.visible, 5000).click();
+        $(By.xpath(viewProfile)).waitUntil(Condition.visible, 5000).click();
     }
 }
