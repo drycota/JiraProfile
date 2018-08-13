@@ -9,7 +9,7 @@ public class LoginSteps {
 
     public void LoginToJira(){
 
-        Configuration.remote = "http://localhost:4444/wd/hub";
+        //Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.browser = "chrome";
 
         open("http://jira.hillel.it:8080/login.jsp");

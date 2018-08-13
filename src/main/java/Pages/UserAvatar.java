@@ -38,7 +38,7 @@ public class UserAvatar extends LoginSteps{
         catch (AWTException e) {
             e.printStackTrace();
         }
-        robot.delay(1000);
+        robot.delay(2000);
         robot.keyPress(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_V);
         robot.keyRelease(KeyEvent.VK_V);
