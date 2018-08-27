@@ -44,6 +44,7 @@ public class UserAvatar extends LoginSteps{
         robot.keyRelease(KeyEvent.VK_V);
         robot.keyRelease(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_ENTER);
+        robot.delay(3000);
 
         $(By.xpath(buttonConfirm)).click();
 

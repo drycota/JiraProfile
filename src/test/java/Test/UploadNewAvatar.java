@@ -13,7 +13,6 @@ public class UploadNewAvatar {
 
     @Test
     public void UploadNewAvatar() throws InterruptedException {
-
         String idAvatar = "//*[@id=\"details-user-avatar-trigger\"]/img";
         String valIdAvatar;
 
@@ -23,7 +22,6 @@ public class UploadNewAvatar {
         ((UserAvatar) uploadNewAvatar).UploadNewAvatar();
 
         SECONDS.sleep(3);
-
         assertNotEquals(valIdAvatar, $(By.xpath(idAvatar)).toString());
     }
 }
