@@ -21,12 +21,12 @@ public class UserAvatar extends LoginSteps{
     }
 
     public void clickOnUserAvatar() {
-        $(By.xpath(userAvatar)).waitUntil(Condition.visible, 3000).click();
+        $(By.xpath(userAvatar)).waitUntil(Condition.visible, 10000).click();
     }
 
     public void UploadNewAvatar(){
-        $(By.xpath(userAvatar)).waitUntil(Condition.visible, 3000).click();
-        $(By.xpath(buttonNewAvatar)).waitUntil(Condition.visible, 3000).click();
+        $(By.xpath(userAvatar)).waitUntil(Condition.visible, 10000).click();
+        $(By.xpath(buttonNewAvatar)).waitUntil(Condition.visible, 10000).click();
 
         File file = new File("src/img/ava.png");
         setClipboard(file.getAbsolutePath());
